@@ -1,0 +1,358 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+*{
+  margin: 0 auto;
+}
+body,
+html {
+  color: #fff;
+  background-color: #191e23;
+  position: relative;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 5vw;
+  background: #1e212852;
+  box-shadow: 0px 20px 30px /* el primero es para el difuminado, el segundo es para */ #6abeff45, 0px 0px 2px #3799e51F;
+}
+
+.logo{
+  padding: 0;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  gap: 0;
+}
+
+.logo img{
+  width: 3rem;
+  height: 2.2rem;
+}
+
+.logo h1{
+  margin-left: 0;
+  font-family: "Goldman", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.header-menu {
+  position: relative;
+  top: 2px;
+  height: 78px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-menu .header-menu-item {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header-menu .header-menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color:#8EE6FF; /* color del subrayado */
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.header-menu .header-menu-item:hover::after {
+  width: 100%;
+}
+
+.header-menu .header-menu-item:hover {
+  color: #53bcea;
+}
+
+.header-menu .header-menu-item.selected:hover {
+  color: #53bcea;
+  background: #f3f4f600;
+}
+
+.header-menu li:nth-child(1) .header-menu-item {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-menu li:nth-child(2) .header-menu-item {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-menu li:nth-child(3) .header-menu-item {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/*Submenu Desplegable*/
+.header-menu .dropdown {
+  position: relative; /* permite posicionar el menú desplegable */
+}
+
+.header-menu .dropdown-menu {
+  display: none; /* oculto por defecto */
+  position: absolute;
+  top: 100%; /* Debajo del botón Unidades */
+  left: 0;
+  background-color: #ffffff00;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.header-menu .dropdown-menu li a {
+  font-family: "Bungee Hairline", sans-serif;
+  display: block;
+  padding: 10px 20px;
+  color: #53bcea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header-menu .dropdown-menu li a:hover {
+  background-color: #f3f4f600;
+  color: #ffffff; 
+}
+
+.header-menu .dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.animated-gradient-text {
+  font-family: "Goldman", sans-serif;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  max-width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 4rem;
+  transition: box-shadow 0.5s ease-out;
+  overflow: hidden;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 300% 100%;
+  animation: gradient linear infinite;
+  border-radius: inherit;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #060010;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-content {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient linear infinite;
+}
+
+
+.contenedor-sobre-mi {
+  position: relative;
+  background: linear-gradient(
+  -30deg,
+  rgba(92, 187, 255, 0) 3%,      
+  rgba(39, 83, 141, 0.539) 8%,      
+  rgba(19, 27, 40, 0.854) 53%,      
+  rgb(21, 23, 28) 70%); 
+  border-radius: 16px;
+  border-color: #8ee6ff;
+  border-width: 1px;
+  display: flex;          /* si quieres que su contenido también use flexbox */
+  flex-direction: column; /* opcional, depende de cómo estén tus hijos */
+  width: 100%;
+  max-width: 1200px;      /* opcional, para limitar el tamaño */
+  height: 100%;
+  z-index: 3;
+  padding: 2rem 4rem;
+  overflow: hidden;
+}
+
+.titulo-sobre-mi {
+  margin: 0;
+  text-align:left;
+  font-size: 2.7rem;
+  font-weight: 700;
+  
+}
+
+.palabra-sobre {
+  font-family: "Goldman", cursive, sans-serif; 
+  color: #ffffff;
+}
+
+.palabra-mi {
+  font-family: 'Bungee Hairline', sans-serif;
+  padding-left: 1rem; 
+  color: #63cbff;
+}
+
+.texto-sobre-mi {
+  position: relative;
+  margin-top: 2rem;
+  margin-right: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #d1d5db;
+  background:#4d72ae00;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 10%;
+  padding-right: 16%;
+  height: auto;
+  width: 70%;
+  border-radius: 16px;
+  z-index: 3;
+}
+
+.texto-sobre-mi p {
+  position: relative;         /* lo mantiene dentro del flujo normal */
+  display: block;             /* comportamiento de texto por defecto */
+  margin: 0 auto;             /* centra el bloque */
+  text-align: left; 
+  line-height: 1.4;        
+  width: 100%;                /* ocupa todo el ancho disponible del contenedor */
+  z-index: 4;                 /* por encima del fondo pero debajo de otros elementos */
+  pointer-events: auto;       /* asegura que sea interactuable si los demás no lo son */
+}
+
+.foto-perfil {
+  position: absolute;
+  align-self: flex-start;
+  justify-self: flex-end;
+  width: auto;
+  top: -3rem;
+  right: -5rem;
+  height: 15rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 16px;
+  z-index: 5;
+  box-shadow: 0px 0px 20px #51cdffBF, 0px 0px 2px #51cdff1F;
+}
+
+.puntos-nombre {
+  position: absolute;
+  align-self: flex-start;
+  justify-self: flex-end;
+  width: auto;
+  top: -6rem;
+  right: -9rem;
+  height: 12rem;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+}
+
+
+
+
+
+
