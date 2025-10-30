@@ -3,7 +3,7 @@ import medusa from "../imagenes/medusa-icono.png"
 
 const Button = ({
   text = "El",
-  icon, // Ahora puede pasarse cualquier JSX
+  icon, 
   size = "md",
   color = "blue",
   tooltipColor = "white",
@@ -13,16 +13,16 @@ const Button = ({
 }) => {
 
   const sizeClasses = {
-    sm: "w-6 h-6 px-2 py-2 text-xs",
-    md: "w-8 h-8 px-4 py-4 text-sm",
-    lg: "w-10 h-10 px-6 py-6 text-base"
+    sm: "w-16 h-15 px-2 py-2 text-xs",
+    md: "w-20 h-15 px-4 py-4 text-sm",
+    lg: "w-20 h-15 px-6 py-6 text-base"
   };
   
   const jellyfishIcon = (
   <img
     src={medusa}
     alt="medusa icono"
-    className='w-60 h-10 hover:scale-125 duration-200 hover:stroke-blue-500'
+    className='w-full h-full object-contain hover:scale-125 duration-160 hover:stroke-blue-500'
     
   />
 );

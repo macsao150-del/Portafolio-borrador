@@ -31,18 +31,18 @@ const getAnchorAndDir = (origin, w, h) => {
 };
 
 const LightRays = ({
-  raysOrigin = 'top-center',
-  raysColor = '#63cbff',
-  raysSpeed = 0.8,
-  lightSpread = 1.1,
-  rayLength = 15,
+  raysOrigin = 'top-right',
+  raysColor = '#5ba0ea',
+  raysSpeed = 0.3,
+  lightSpread = 3,
+  rayLength = 10,
   pulsating = false,
-  fadeDistance = 1.0,
-  saturation = 2.0,
+  fadeDistance = 2.0,
+  saturation = 1.4,
   followMouse = true,
   mouseInfluence = 0.1,
-  noiseAmount = 0.2,
-  distortion = 0.2,
+  noiseAmount = 0,
+  distortion = 0.1,
   className = 'custom-rays'
 }) => {
   const containerRef = useRef(null);
@@ -391,7 +391,7 @@ void main() {
   return (
     <div
       ref={containerRef}
-      className={`w-full h-full pointer-events-none z-[3] overflow-hidden relative ${className}`.trim()}
+      className={`w-full h-full pointer-events-none z-30 overflow-hidden relative ${className}`.trim()}
     />
   );
 };
