@@ -7,17 +7,38 @@
   "language": "LANGUAGES",
   "portfolio": "PORTFOLIO",
   "proyects": "PROYECTS",
+  "contact_me": "CONTACT ME",
   "certifications": "CERTIFICATIONS",
   "home": "Home",
   "about": "About me",
+  
+  "downloadCV": "Download CV",
+  "seeWebsite": "See Website",
+  "others": "OTHERS",
+
+  "spanish": "SPANISH (NATIVE)",
+  "english": "ENGLISH (A2-B1)",
+  "italian": "ITALIAN (A1)",
+
+  "fragmentos_de_cristal": "SHARDS OF CRYSTAL",
+  "fragmentos_de_cristal_des": "Developed a thematic website inspired by Steven Universe, featuring visual design, section-based structure, and interactive navigation.",
+
+  "plan_de_estudios": "STUDY PLAN",
+  "plan_de_estudios_des": "Academic project focused on web development, where I designed and built a webpage that organizes and presents course plan information clearly, applying principles of design, usability, and semantic structure.",
+  
+  "tabla_periodica": "PERIODIC TABLE (PROTOTYPE)",
+  "tabla_periodica_des": "Creation of a webpage displaying the periodic table, using <div> elements to structure the content and practice layout with HTML and CSS.",
+
   "portfolio_footer": "Portfolio",
-  "spanish": "SPANISH",
-  "english": "ENGLISH",
   "phrase_footer": "Never stop learning.",
   "contact_footer": "Would you like to collaborate with me? Let's get in touch!",
   "footer": "Asher Martínez Alcaraz. All rights reserved.",
 
-
-  
-  "button": "Switch to Spanish"
+  "send_me_footer": "Send me a message",
+  "your_name_footer": "Your name",
+  "your_email_footer": "Your email",
+  "your_message_footer": "Your message...",
+  "send_footer": "Send",
+  "or_footer": "Or write to me directly at:",
+  "thanks_footer": "Thank you, it will be a pleasure to work together."
 }

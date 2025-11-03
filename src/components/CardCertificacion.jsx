@@ -5,31 +5,29 @@ const CardCertificacion = ({ image, title }) => {
 
   return (
     <>
-        {/* Tarjeta principal */}
-        <div className="card" onClick={() => setOpen(true)}>
-            <div className="card-image">
-                <img src={image} alt={title}/>
-            </div>
-            <p className="card-title">{title}</p>
+      <div
+        className="card cursor-pointer"
+        onClick={() => setOpen(true)}
+      >
+        <div className="card-image">
+          <img src={image} alt={title} className="rounded-md w-full h-auto" />
         </div>
+        <p className="card-title text-center mt-2">{title}</p>
+      </div>
 
-      {/* 🌙 Modal (fondo oscuro) */}
-        {open && (
+      {open && (
         <div
           className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 backdrop-blur-sm"
-          onClick={() => setOpen(false)} // Cierra al hacer click fuera del contenido
+          onClick={() => setOpen(false)}
         >
-          {/* 📦 Contenedor del modal (con animación) */}
           <div
-            onClick={(e) => e.stopPropagation()} // Evita cerrar si haces clic dentro
-            className=" rounded-2xl p-30 lg:w-[100%] w-[83%] h-auto max-w-lg shadow-2xl text-white relative
-                        animate-[fadeInScale_0.4s_ease-out_forwards] "
+            onClick={(e) => e.stopPropagation()}
+            className="flex items-center justify-center rounded-2xl p-4 shadow-2xl max-w-4xl w-[90%] max-h-[90%] text-white relative animate-[fadeInScale_0.4s_ease-out_forwards]"
           >
-
-            {/* 🖼 Contenido */}
             <img
               src={image}
-              className="lg:rounded-xl max-w-[5rem] lg:max-w-3xl lg:min-h-[250px] min-h-[45px] h-auto justify-self-center lg:border border-gray-700 transform lg:scale-110 scale-410 md:scale-125 transition-transform duration-300"
+              alt={title}
+              className="rounded-xl max-h-[85vh] w-auto object-contain"
             />
           </div>
         </div>

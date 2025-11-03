@@ -1,21 +1,44 @@
 {
   "phrase": "Creciendo con cada línea de código.",
   "welcome": "¡Hola! Soy",
-  "welcome_2": "¡Hola!",
+
   "description": "Soy un estudiante de Ingeniería en Informática en la Universidad Politécnica de Sinaloa desde 2024. Me apasiona el desarrollo web, la programación y la creación de soluciones tecnológicas eficientes y visualmente atractivas. Disfruto optimizar procesos mediante la lógica y la automatización, aplicando conceptos de programación estructurada y orientada a objetos.",
   "tools": "HERRAMIENTAS Y LENGUAJES QUE UTILIZO PARA CREAR",
   "language": "IDIOMAS",
   "portfolio": "PORTAFOLIO",
   "proyects": "PROYECTOS",
+  "contact_me": "CONTACTAME",
   "certifications": "CERTIFICACIONES",
   "home": "Inicio",
   "about": "Sobre mi",
+  
+  "downloadCV": "Descargar CV",
+  "seeWebsite": "Ver sitio",
+  "others": "OTROS",
+
+  "spanish": "ESPAÑOL (NATIVO)",
+  "english": "INGLÉS (A2-B1)",
+  "italian": "ITALIANO (A1)",
+
+  "fragmentos_de_cristal": "FRAGMENTOS DE CRISTAL",
+  "fragmentos_de_cristal_des": "Desarrollo de una página web temática inspirada en Steven Universe, con diseño visual, estructura por secciones y navegación interactiva.",
+  
+  "plan_de_estudios": "PLAN DE ESTUDIOS",
+  "plan_de_estudios_des": "Proyecto académico enfocado en el desarrollo web, donde diseñé y programé una página que organiza y presenta de forma clara la información de un plan de asignatura, aplicando principios de diseño, usabilidad y estructura semántica.",
+
+  "tabla_periodica": "TABLA PERIODICA (PROTOTIPO)",
+  "tabla_periodica_des": "Creación de una página web de la tabla periódica, utilizando etiquetas <div> para estructurar el contenido y practicar la maquetación con HTML y CSS.",
+
   "portfolio_footer": "Portafolio",
-  "spanish": "ESPAÑOL",
-  "english": "INGLES",
   "phrase_footer": "Nunca dejes de aprender.",
   "contact_footer": "¿Te gustaria que colaboraramos juntos? ¡Hay que ponernos en contacto!",
   "footer": "Asher Martínez Alcaraz. Todos los derechos reservados.",
-  
-  "button": "Cambiar a Inglés"
+
+  "send_me_footer": "Envíame un mensaje",
+  "your_name_footer": "Tu nombre",
+  "your_email_footer": "Tu correo",
+  "your_message_footer": "Tu mensaje...",
+  "send_footer": "Enviar",
+  "or_footer": "O escríbeme directamente a:",
+  "thanks_footer": "Gracias, será un placer trabajar juntos"
 }

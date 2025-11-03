@@ -1,0 +1,44 @@
+{
+  "phrase": "Grandir à chaque ligne de code.",
+  "welcome": "Bonjour ! Je suis",
+
+  "description": "Je suis étudiant en ingénierie informatique à l’Université Polytechnique de Sinaloa depuis 2024. Je suis passionné par le développement web, la programmation et la création de solutions technologiques efficaces et esthétiques. J’aime optimiser les processus grâce à la logique et à l’automatisation, en appliquant des concepts de programmation structurée et orientée objet.",
+  "tools": "OUTILS ET LANGAGES QUE J’UTILISE POUR CRÉER",
+  "language": "LANGAGES",
+  "portfolio": "PORTFOLIO",
+  "proyects": "PROJETS",
+  "contact_me": "CONTACTEZ-MOI",
+  "certifications": "CERTIFICATIONS",
+  "home": "Accueil",
+  "about": "À propos de moi",
+  
+  "downloadCV": "Télécharger le CV",
+  "seeWebsite": "Voir le site",
+  "others": "AUTRES",
+
+  "spanish": "ESPAGNOL (NATIF)",
+  "english": "ANGLAIS (A2-B1)",
+  "italian": "ITALIEN (A1)",
+
+  "fragmentos_de_cristal": "FRAGMENTS DE CRISTAL",
+  "fragmentos_de_cristal_des": "Développement d’un site web thématique inspiré de Steven Universe, avec un design visuel, une structure par sections et une navigation interactive.",
+
+  "plan_de_estudios": "PLAN D’ÉTUDES",
+  "plan_de_estudios_des": "Projet académique axé sur le développement web, où j’ai conçu et programmé une page web organisant et présentant clairement les informations d’un plan de cours, en appliquant des principes de design, d’utilisabilité et de structure sémantique.",
+  
+  "tabla_periodica": "TABLEAU PÉRIODIQUE (PROTOYPE)",
+  "tabla_periodica_des": "Création d’une page web du tableau périodique, en utilisant des balises <div> pour structurer le contenu et pratiquer la mise en page avec HTML et CSS.",
+
+  "portfolio_footer": "Portfolio",
+  "phrase_footer": "N’arrête jamais d’apprendre.",
+  "contact_footer": "Souhaitez-vous collaborer avec moi ? Prenons contact !",
+  "footer": "Asher Martínez Alcaraz. Tous droits réservés.",
+
+  "send_me_footer": "Envoyez-moi un message",
+  "your_name_footer": "Votre nom",
+  "your_email_footer": "Votre e-mail",
+  "your_message_footer": "Votre message...",
+  "send_footer": "Envoyer",
+  "or_footer": "Ou écrivez-moi directement à :",
+  "thanks_footer": "Merci, ce sera un plaisir de travailler ensemble."
+}
