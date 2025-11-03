@@ -184,7 +184,7 @@ function App() {
               </h3>
               <hr className="relative flex top-1 w-[75%] border-white border-[0.1px] lg:border" />
 
-              <div className="relative top-10 z-50 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-2 gap-3 px-6 lg:px-15">
+              <div className="relative top-10 z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-2 gap-3 px-6 lg:px-15">
                 <Card
                   image={fragmentosdecristal}
                   title={t("fragmentos_de_cristal")}
