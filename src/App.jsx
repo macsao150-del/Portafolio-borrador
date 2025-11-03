@@ -189,22 +189,22 @@ function App() {
                   image={fragmentosdecristal}
                   title={t("fragmentos_de_cristal")}
                   description={t("fragmentos_de_cristal_des")}
-                  website="https://mi-sitio.com"
-                  github="https://github.com/usuario/mi-proyecto"
+                  website="https://ashermartinez.netlify.app/"
+                  github="https://github.com/macsao150-del/fragmentosdecristal.git"
                 />
                 <Card
                   image={plandeestudios}
                   title={t("plan_de_estudios")}
                   description={t("plan_de_estudios_des")}
-                  website="https://mi-sitio.com"
-                  github="https://github.com/usuario/mi-proyecto"
+                  website="https://macsao150-del.github.io/Plan-de-estudios/"
+                  github="https://github.com/macsao150-del/Plan-de-estudios.git"
                 />
                 <Card
                   image={tablaperiodica}
                   title={t("tabla_periodica")}
                   description={t("tabla_periodica_des")}
-                  website="https://mi-sitio.com"
-                  github="https://github.com/usuario/mi-proyecto"
+                  website="https://ashermartineztablaperiodica.netlify.app/"
+                  github="https://github.com/macsao150-del/Tabla-Periodica.git"
                 />
               </div>        
             </div>
